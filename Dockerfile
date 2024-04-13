@@ -14,7 +14,7 @@ ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 # You can install a specific version like: flowise@1.0.0
-RUN npm install -g flowise@1.4.3
+RUN npm install -g flowise@1.6.6
 # RUN npm install -g git+https://github.com/FlowiseAI/Flowise.git
 
 WORKDIR /data
@@ -26,3 +26,4 @@ EXPOSE ${PORT}
 
 # Start the application with a delay
 CMD /bin/sh -c "sleep 3; flowise start"
+
